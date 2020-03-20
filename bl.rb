@@ -2,9 +2,9 @@ class Bl < Formula
   homepage "https://blocklayerhq.com"
   desc "Blocklayer CLI"
 
-  version "f27c6b96"
+  version "6145b039"
   url "https://blocklayer-dev.s3.amazonaws.com/alpha-3/cli/#{version}/bl-Darwin-x86_64"
-  sha256 "320c9777846d194993bd056c49dce2754ec0b7ed48747785bfda1ec3bdeaa308"
+  sha256 "a434c78f49aafa658d5d109a21c8e3a953c924edf7da7cb68deca784abf5153c"
 
   def install
     mv "bl-Darwin-x86_64", "bl"
