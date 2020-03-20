@@ -15,3 +15,8 @@ sed -i '' "s/version \".*/version \"${version}\"/g" bl.rb
 sed -i '' "s/sha256 \".*/sha256 \"${digest}\"/g" bl.rb
 
 rm -f "$binary"
+
+if [ -n "$(git status -s . | grep -e '^ M bl.rb')" ] ; then
+	git commit bl.rb -m "bump bl to $version"
+	git push origin master
+fi
