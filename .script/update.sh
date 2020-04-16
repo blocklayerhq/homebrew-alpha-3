@@ -4,6 +4,8 @@ set -ex
 
 cd "$(dirname "$0")/.."
 
+git pull
+
 binary="$(mktemp /tmp/bl-cli-XXXXXX)"
 curl -o "$binary" "https://blocklayer-dev.s3.amazonaws.com/alpha-3/cli/latest/bl-Darwin-x86_64"
 chmod +x "$binary"
